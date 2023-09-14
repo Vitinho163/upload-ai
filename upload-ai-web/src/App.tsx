@@ -1,5 +1,5 @@
 import { Github, Wand2 } from 'lucide-react'
-import { Button } from "./components/ui/button";
+import { Button, openGithubPage } from "./components/ui/button";
 import { Separator } from './components/ui/separator';
 import { Textarea } from './components/ui/textarea';
 import { Label } from './components/ui/label';
@@ -44,7 +44,7 @@ export function App() {
 
             <Separator orientation='vertical' className='h-6' />
 
-            <Button variant="outline">
+            <Button variant="outline" onClick={openGithubPage}>
               <Github className="w-4 h-4 mr-2" />
               Github
             </Button>
